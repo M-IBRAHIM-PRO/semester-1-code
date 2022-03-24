@@ -1,0 +1,52 @@
+int value = ghost_one_Direction();
+
+    if (maze[ghostX_H - 1][ghostY_H] != '#' && value == 1)
+    {
+        if (maze[ghostX_H - 1][ghostY_H] == ' ' || maze[ghostX_H - 1][ghostY_H] == '.' || maze[ghostX_H - 1][ghostY_H] == 'P')
+        {
+            if (maze[ghostX_H][ghostY_H] == '.')
+            {
+                gotoxy(ghostY_H, ghostX_H);
+                cout << maze[ghostX_H][ghostY_H];
+                ghostX_H = ghostX_H - 1;
+
+                gotoxy(ghostY_H, ghostX_H);
+                cout << "G";
+            }
+            else
+            {
+                gotoxy(ghostY_H, ghostX_H);
+                cout << " ";
+                ghostX_H = ghostX_H - 1;
+
+                gotoxy(ghostY_H, ghostX_H);
+                cout << "G";
+            }
+        }
+    }
+    else
+    {
+        if (maze[ghostX_H + 1][ghostY_H] == ' ' || maze[ghostX_H + 1][ghostY_H] == '.' || maze[ghostX_H + 1][ghostY_H] == 'P')
+        {
+            if (maze[ghostX_H][ghostY_H] == '.')
+            {
+                gotoxy(ghostY_H, ghostX_H);
+                cout << maze[ghostX_H][ghostY_H];
+                ghostX_H = ghostX_H + 1;
+
+                gotoxy(ghostY_H, ghostX_H);
+                cout << "G";
+            }
+            else
+            {
+                gotoxy(ghostY_H, ghostX_H);
+                cout << " ";
+                ghostX_H = ghostX_H + 1;
+
+                gotoxy(ghostY_H, ghostX_H);
+                cout << "G";
+            }
+        }
+    }
+
+    return 1;

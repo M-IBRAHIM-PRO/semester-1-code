@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+main(){
+int n1;
+cout<<"HELLO! AMIR "<<endl;
+cout<<"DONT WORRY WE WILL HELP YOU OUT IN WEIGHT LOSS.";
+cout<<"ACCORDING TO DOCTOR IF YOU FOLLOW THE INSTRUCTIONS YOU WILL LOSE 1KG IN 15 DAYS."<<endl;
+cout<<"AS YOU WANT TO LOSE 12KG WEIGHT.SO, OUR PROGRAM WILL HELP YOU OUT.";
+n1=12*15;
+cout<<"YOU WILL REQUIRE "<<n1;
+cout<<" NUMBER OF DAYS TO LOSE YOUR WEIGHT";
+
+
+
+}

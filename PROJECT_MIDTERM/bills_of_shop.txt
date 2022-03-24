@@ -1,0 +1,8 @@
+
+electricity 12000
+
+food 20000
+
+salary 30000
+
+ordersplaced 30000
